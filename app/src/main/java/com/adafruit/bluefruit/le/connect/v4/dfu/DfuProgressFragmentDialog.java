@@ -119,7 +119,7 @@ public class DfuProgressFragmentDialog extends ProgressFragmentDialog {
         public void onDeviceConnecting(@NonNull final String deviceAddress) {
             Log.d(TAG, "onDeviceConnecting");
             setIndeterminate(true);
-            setMessage(R.string.dfu_status_connecting);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_connecting);
         }
 
         @Override
@@ -133,7 +133,7 @@ public class DfuProgressFragmentDialog extends ProgressFragmentDialog {
 
             setIndeterminate(true);
             setProgress(0);
-            setMessage(R.string.dfu_status_starting);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_starting);
 
         }
 
@@ -141,7 +141,7 @@ public class DfuProgressFragmentDialog extends ProgressFragmentDialog {
         public void onEnablingDfuMode(@NonNull final String deviceAddress) {
             Log.d(TAG, "onEnablingDfuMode");
 
-            setMessage(R.string.dfu_status_switching_to_dfu);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_switching_to_dfu);
         }
 
         @Override
@@ -153,22 +153,22 @@ public class DfuProgressFragmentDialog extends ProgressFragmentDialog {
                 setIndeterminate(false);
                 setProgress(percent);
                 if (partsTotal > 1)
-                    setMessage(context.getString(R.string.dfu_status_uploading_part, currentPart, partsTotal));
+                    setMessage(context.getString(no.nordicsemi.android.dfu.R.string.dfu_status_uploading_part, currentPart, partsTotal));
                 else
-                    setMessage(R.string.dfu_status_uploading);
+                    setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_uploading);
             }
         }
 
         @Override
         public void onFirmwareValidating(@NonNull final String deviceAddress) {
             Log.d(TAG, "onFirmwareValidating");
-            setMessage(R.string.dfu_status_validating);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_validating);
         }
 
         @Override
         public void onDeviceDisconnecting(final String deviceAddress) {
             Log.d(TAG, "onDeviceDisconnecting");
-            setMessage(R.string.dfu_status_disconnecting);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_disconnecting);
         }
 
         @Override
@@ -180,14 +180,14 @@ public class DfuProgressFragmentDialog extends ProgressFragmentDialog {
         @Override
         public void onDfuCompleted(@NonNull final String deviceAddress) {
             Log.d(TAG, "onDfuCompleted");
-            setMessage(R.string.dfu_status_completed);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_completed);
             mListener.onDfuCompleted(deviceAddress);
         }
 
         @Override
         public void onDfuAborted(@NonNull final String deviceAddress) {
             Log.d(TAG, "onDfuAborted");
-            setMessage(R.string.dfu_status_aborted);
+            setMessage(no.nordicsemi.android.dfu.R.string.dfu_status_aborted);
             mListener.onDfuAborted(deviceAddress);
         }
 

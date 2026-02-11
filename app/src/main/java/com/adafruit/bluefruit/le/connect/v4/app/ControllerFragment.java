@@ -480,27 +480,24 @@ public class ControllerFragment extends ConnectedPeripheralFragment implements G
         inflater.inflate(R.menu.menu_help, menu);
     }
 
-    @SuppressWarnings("SwitchStatementWithTooFewBranches")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         FragmentActivity activity = getActivity();
 
-        switch (item.getItemId()) {
-            case R.id.action_help:
-                if (activity != null) {
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.controller_help_title), getString(R.string.controller_help_text_ios_android));
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                            .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
-                            .replace(R.id.contentLayout, helpFragment, "Help");
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.commit();
-                }
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_help) {
+            if (activity != null) {
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.controller_help_title), getString(R.string.controller_help_text_ios_android));
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                        .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
+                        .replace(R.id.contentLayout, helpFragment, "Help");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     // endregion

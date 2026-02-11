@@ -17,6 +17,10 @@ android {
         //resValue = "string", "app_name", "Bluefruit Connect"
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     buildTypes {
         /*release {
             isMinifyEnabled = false
@@ -44,7 +48,6 @@ android {
     androidResources {
         noCompress += "zip"
     }
-    namespace = "com.adafruit.bluefruit.le.connect.v4"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

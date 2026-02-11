@@ -229,23 +229,20 @@ public class PinIOFragment extends ConnectedPeripheralFragment implements UartDa
     public boolean onOptionsItemSelected(MenuItem item) {
         FragmentActivity activity = getActivity();
 
-        //noinspection SwitchStatementWithTooFewBranches
-        switch (item.getItemId()) {
-            case R.id.action_help:
-                if (activity != null) {
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.pinio_help_title), getString(R.string.pinio_help_text));
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                            .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
-                            .replace(R.id.contentLayout, helpFragment, "Help");
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.commit();
-                }
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_help) {
+            if (activity != null) {
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.pinio_help_title), getString(R.string.pinio_help_text));
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                        .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
+                        .replace(R.id.contentLayout, helpFragment, "Help");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     // endregion
@@ -1128,19 +1125,14 @@ public class PinIOFragment extends ConnectedPeripheralFragment implements UartDa
 
                     pinViewHolder.modeRadioGroup.setOnCheckedChangeListener((radioGroup, i) -> {
                         int newMode = PinData.kMode_Unknown;
-                        switch (i) {
-                            case R.id.inputRadioButton:
-                                newMode = PinData.kMode_Input;      // Reset mode to input
-                                break;
-                            case R.id.outputRadioButton:
-                                newMode = PinData.kMode_Output;
-                                break;
-                            case R.id.pwmRadioButton:
-                                newMode = PinData.kMode_PWM;
-                                break;
-                            case R.id.analogRadioButton:
-                                newMode = PinData.kMode_Analog;
-                                break;
+                        if (i == R.id.inputRadioButton) {
+                            newMode = PinData.kMode_Input;      // Reset mode to input
+                        } else if (i == R.id.outputRadioButton) {
+                            newMode = PinData.kMode_Output;
+                        } else if (i == R.id.pwmRadioButton) {
+                            newMode = PinData.kMode_PWM;
+                        } else if (i == R.id.analogRadioButton) {
+                            newMode = PinData.kMode_Analog;
                         }
 
                         if (newMode != PinData.kMode_Unknown) {
@@ -1158,13 +1150,10 @@ public class PinIOFragment extends ConnectedPeripheralFragment implements UartDa
                         pinViewHolder.pullupRadioButton.setChecked(pin.mode == PinData.kMode_InputPullup);
                         pinViewHolder.inputRadioGroup.setOnCheckedChangeListener((radioGroup, i) -> {
                             int newMode = PinData.kMode_Input;
-                            switch (i) {
-                                case R.id.floatingRadioButton:
-                                    newMode = PinData.kMode_Input;
-                                    break;
-                                case R.id.pullupRadioButton:
-                                    newMode = PinData.kMode_InputPullup;
-                                    break;
+                            if (i == R.id.floatingRadioButton) {
+                                newMode = PinData.kMode_Input;
+                            } else if (i == R.id.pullupRadioButton) {
+                                newMode = PinData.kMode_InputPullup;
                             }
 
                             mListener.onModeSelected(pin, newMode);
@@ -1181,13 +1170,10 @@ public class PinIOFragment extends ConnectedPeripheralFragment implements UartDa
                         pinViewHolder.highRadioButton.setChecked(pin.digitalValue == PinData.kDigitalValue_High);
                         pinViewHolder.stateRadioGroup.setOnCheckedChangeListener((radioGroup, i) -> {
                             int newState = PinData.kDigitalValue_Low;
-                            switch (i) {
-                                case R.id.lowRadioButton:
-                                    newState = PinData.kDigitalValue_Low;
-                                    break;
-                                case R.id.highRadioButton:
-                                    newState = PinData.kDigitalValue_High;
-                                    break;
+                            if (i == R.id.lowRadioButton) {
+                                newState = PinData.kDigitalValue_Low;
+                            } else if (i == R.id.highRadioButton) {
+                                newState = PinData.kDigitalValue_High;
                             }
 
                             mListener.onDigitalValueSelected(pin, newState);

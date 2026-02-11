@@ -141,23 +141,21 @@ public class ThermalCameraFragment extends ConnectedPeripheralFragment implement
     public boolean onOptionsItemSelected(MenuItem item) {
         FragmentActivity activity = getActivity();
 
-        switch (item.getItemId()) {
-            case R.id.action_help:
-                if (activity != null) {
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    if (fragmentManager != null) {
-                        CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.thermalcamera_help_title), getString(R.string.thermalcamera_help_text));
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                                .replace(R.id.contentLayout, helpFragment, "Help");
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
-                    }
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_help) {
+            if (activity != null) {
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                if (fragmentManager != null) {
+                    CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.thermalcamera_help_title), getString(R.string.thermalcamera_help_text));
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                            .replace(R.id.contentLayout, helpFragment, "Help");
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
                 }
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+            }
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
     */
     // endregion

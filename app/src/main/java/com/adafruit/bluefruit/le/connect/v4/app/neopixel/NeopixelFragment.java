@@ -267,41 +267,37 @@ public class NeopixelFragment extends ConnectedPeripheralFragment implements Neo
     public boolean onOptionsItemSelected(MenuItem item) {
         FragmentActivity activity = getActivity();
 
-        switch (item.getItemId()) {
-            case R.id.action_boardSelector:
-                if (activity != null) {
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    NeopixelBoardSelectorFragment boardSelectorFragment = NeopixelBoardSelectorFragment.newInstance();
-                    boardSelectorFragment.setTargetFragment(this, 0);
-                    boardSelectorFragment.show(fragmentManager, "BoardSelector");
-                }
-                return true;
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_boardSelector) {
+            if (activity != null) {
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                NeopixelBoardSelectorFragment boardSelectorFragment = NeopixelBoardSelectorFragment.newInstance();
+                boardSelectorFragment.setTargetFragment(this, 0);
+                boardSelectorFragment.show(fragmentManager, "BoardSelector");
+            }
+            return true;
+        } else if (itemId == R.id.action_boardComponentsSelector) {
+            if (activity != null) {
 
-            case R.id.action_boardComponentsSelector:
-                if (activity != null) {
-
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    NeopixelComponentSelectorFragment boardComponentSelectorFragment = NeopixelComponentSelectorFragment.newInstance(mComponents.getType(), is400khzEnabled());
-                    boardComponentSelectorFragment.setTargetFragment(this, 0);
-                    boardComponentSelectorFragment.show(fragmentManager, "BoardComponentSelector");
-                }
-                return true;
-
-            case R.id.action_help:
-                if (activity != null) {
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.neopixel_help_title), getString(R.string.neopixel_help_text));
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                            .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
-                            .replace(R.id.contentLayout, helpFragment, "Help");
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.commit();
-                }
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                NeopixelComponentSelectorFragment boardComponentSelectorFragment = NeopixelComponentSelectorFragment.newInstance(mComponents.getType(), is400khzEnabled());
+                boardComponentSelectorFragment.setTargetFragment(this, 0);
+                boardComponentSelectorFragment.show(fragmentManager, "BoardComponentSelector");
+            }
+            return true;
+        } else if (itemId == R.id.action_help) {
+            if (activity != null) {
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.neopixel_help_title), getString(R.string.neopixel_help_text));
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                        .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
+                        .replace(R.id.contentLayout, helpFragment, "Help");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
     // endregion
 

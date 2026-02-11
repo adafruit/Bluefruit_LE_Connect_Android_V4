@@ -1,9 +1,9 @@
 package com.adafruit.bluefruit.le.connect.v4.app;
 
 import static android.Manifest.permission.BLUETOOTH_CONNECT;
-import static com.adafruit.bluefruit.le.connect.ble.central.BleScanner.kDeviceType_Beacon;
-import static com.adafruit.bluefruit.le.connect.ble.central.BleScanner.kDeviceType_Uart;
-import static com.adafruit.bluefruit.le.connect.ble.central.BleScanner.kDeviceType_UriBeacon;
+import static com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner.kDeviceType_Beacon;
+import static com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner.kDeviceType_Uart;
+import static com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner.kDeviceType_UriBeacon;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

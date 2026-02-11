@@ -142,13 +142,10 @@ public class MainFragment extends Fragment {
         boolean isFragmentChanged = false;
         if (navigationSelectedItem != selectedFragmentId) {
             Fragment selectedFragment = null;
-            switch (navigationSelectedItem) {
-                case R.id.navigation_central:
-                    selectedFragment = ScannerFragment.newInstance();
-                    break;
-                case R.id.navigation_peripheral:
-                    selectedFragment = PeripheralModeFragment.newInstance();
-                    break;
+            if (navigationSelectedItem == R.id.navigation_central) {
+                selectedFragment = ScannerFragment.newInstance();
+            } else if (navigationSelectedItem == R.id.navigation_peripheral) {
+                selectedFragment = PeripheralModeFragment.newInstance();
             }
 
             if (selectedFragment != null) {
@@ -202,13 +199,10 @@ public class MainFragment extends Fragment {
 
     private void updateActionBarTitle(int navigationSelectedItem) {
         int titleId = 0;
-        switch (navigationSelectedItem) {
-            case R.id.navigation_central:
-                titleId = R.string.main_tabbar_singlemode;//R.string.main_tabbar_centralmode;
-                break;
-            case R.id.navigation_peripheral:
-                titleId = R.string.main_tabbar_peripheralmode;
-                break;
+        if (navigationSelectedItem == R.id.navigation_central) {
+            titleId = R.string.main_tabbar_singlemode;//R.string.main_tabbar_centralmode;
+        } else if (navigationSelectedItem == R.id.navigation_peripheral) {
+            titleId = R.string.main_tabbar_peripheralmode;
         }
         setActionBarTitle(getString(titleId));
     }

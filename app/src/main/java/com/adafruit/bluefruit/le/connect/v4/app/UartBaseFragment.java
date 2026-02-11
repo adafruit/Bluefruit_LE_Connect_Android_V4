@@ -457,107 +457,77 @@ public abstract class UartBaseFragment extends ConnectedPeripheralFragment imple
             return super.onOptionsItemSelected(item);
         }
 
-        switch (item.getItemId()) {
-            case R.id.action_help: {
-                FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.uart_help_title), getString(R.string.uart_help_text_android));
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                        .replace(R.id.contentLayout, helpFragment, "Help");
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-                return true;
-            }
-
-            case R.id.action_mqttsettings: {
-                FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                MqttSettingsFragment mqttSettingsFragment = MqttSettingsFragment.newInstance();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                        .replace(R.id.contentLayout, mqttSettingsFragment, "MqttSettings");
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-                return true;
-            }
-
-            case R.id.action_displaymode_timestamp: {
-                setDisplayFormat(UARTDISPLAYMODE_TIMESTAMP);
-                invalidateTextView();
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_displaymode_text: {
-                setDisplayFormat(UARTDISPLAYMODE_TEXT);
-                invalidateTextView();
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_displaymode_terminal: {
-                setDisplayFormat(UARTDISPLAYMODE_TERMINAL);
-                invalidateTextView();
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_datamode_hex: {
-                setShowDataInHexFormat(true);
-                invalidateTextView();
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_datamode_ascii: {
-                setShowDataInHexFormat(false);
-                invalidateTextView();
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_echo: {
-                setEchoEnabled(!mIsEchoEnabled);
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_eol: {
-                mIsEolEnabled = !mIsEolEnabled;
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_eolmode_n: {
-                mEolCharactersId = 0;
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_eolmode_r: {
-                mEolCharactersId = 1;
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_eolmode_nr: {
-                mEolCharactersId = 2;
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_eolmode_rn: {
-                mEolCharactersId = 3;
-                activity.invalidateOptionsMenu();
-                return true;
-            }
-
-            case R.id.action_export: {
-                export();
-                return true;
-            }
-
-            default: {
-                return super.onOptionsItemSelected(item);
-            }
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_help) {
+            FragmentManager fragmentManager = activity.getSupportFragmentManager();
+            CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.uart_help_title), getString(R.string.uart_help_text_android));
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                    .replace(R.id.contentLayout, helpFragment, "Help");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+            return true;
+        } else if (itemId == R.id.action_mqttsettings) {
+            FragmentManager fragmentManager = activity.getSupportFragmentManager();
+            MqttSettingsFragment mqttSettingsFragment = MqttSettingsFragment.newInstance();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                    .replace(R.id.contentLayout, mqttSettingsFragment, "MqttSettings");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+            return true;
+        } else if (itemId == R.id.action_displaymode_timestamp) {
+            setDisplayFormat(UARTDISPLAYMODE_TIMESTAMP);
+            invalidateTextView();
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_displaymode_text) {
+            setDisplayFormat(UARTDISPLAYMODE_TEXT);
+            invalidateTextView();
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_displaymode_terminal) {
+            setDisplayFormat(UARTDISPLAYMODE_TERMINAL);
+            invalidateTextView();
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_datamode_hex) {
+            setShowDataInHexFormat(true);
+            invalidateTextView();
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_datamode_ascii) {
+            setShowDataInHexFormat(false);
+            invalidateTextView();
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_echo) {
+            setEchoEnabled(!mIsEchoEnabled);
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_eol) {
+            mIsEolEnabled = !mIsEolEnabled;
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_eolmode_n) {
+            mEolCharactersId = 0;
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_eolmode_r) {
+            mEolCharactersId = 1;
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_eolmode_nr) {
+            mEolCharactersId = 2;
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_eolmode_rn) {
+            mEolCharactersId = 3;
+            activity.invalidateOptionsMenu();
+            return true;
+        } else if (itemId == R.id.action_export) {
+            export();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     // endregion

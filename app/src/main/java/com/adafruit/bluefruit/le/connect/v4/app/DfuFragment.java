@@ -174,22 +174,19 @@ public class DfuFragment extends ConnectedPeripheralFragment implements DfuFileP
     public boolean onOptionsItemSelected(MenuItem item) {
         FragmentActivity activity = getActivity();
 
-        //noinspection SwitchStatementWithTooFewBranches
-        switch (item.getItemId()) {
-            case R.id.action_help:
-                if (activity != null) {
-                    FragmentManager fragmentManager = activity.getSupportFragmentManager();
-                    CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.dfu_help_title), getString(R.string.dfu_help_text));
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                            .replace(R.id.contentLayout, helpFragment, "Help");
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.commit();
-                }
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        int itemId = item.getItemId();
+        if (itemId == R.id.action_help) {
+            if (activity != null) {
+                FragmentManager fragmentManager = activity.getSupportFragmentManager();
+                CommonHelpFragment helpFragment = CommonHelpFragment.newInstance(getString(R.string.dfu_help_title), getString(R.string.dfu_help_text));
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                        .replace(R.id.contentLayout, helpFragment, "Help");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
     // endregion
 

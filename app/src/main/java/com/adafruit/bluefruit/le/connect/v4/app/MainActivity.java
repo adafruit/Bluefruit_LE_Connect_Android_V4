@@ -163,22 +163,21 @@ public class MainActivity extends AppCompatActivity implements ScannerFragment.S
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                onBackPressed();
-                return true;
-            case R.id.action_about:
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                AboutFragment fragment = AboutFragment.newInstance();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                        .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
-                        .replace(R.id.contentLayout, fragment, "About");
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        int itemId = item.getItemId();
+        if (itemId == android.R.id.home) {
+            onBackPressed();
+            return true;
+        } else if (itemId == R.id.action_about) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            AboutFragment fragment = AboutFragment.newInstance();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
+                    .setCustomAnimations(R.anim.slide_in_left, R.anim.slide_out_right, R.anim.slide_in_right, R.anim.slide_out_left)
+                    .replace(R.id.contentLayout, fragment, "About");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void checkPermissions() {
@@ -510,7 +509,7 @@ public class MainActivity extends AppCompatActivity implements ScannerFragment.S
     public void onDfuCompleted(String deviceAddress) {
         dismissDfuProgressDialog();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.dfu_status_completed).setMessage(R.string.dfu_updatecompleted_message)
+        builder.setTitle(no.nordicsemi.android.dfu.R.string.dfu_status_completed).setMessage(R.string.dfu_updatecompleted_message)
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
     }
@@ -520,7 +519,7 @@ public class MainActivity extends AppCompatActivity implements ScannerFragment.S
         dismissDfuProgressDialog();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.dfu_status_error).setMessage(R.string.dfu_updateaborted_message)
+        builder.setTitle(no.nordicsemi.android.dfu.R.string.dfu_status_error).setMessage(R.string.dfu_updateaborted_message)
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
     }
@@ -530,7 +529,7 @@ public class MainActivity extends AppCompatActivity implements ScannerFragment.S
         dismissDfuProgressDialog();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.dfu_status_error).setMessage(message)
+        builder.setTitle(no.nordicsemi.android.dfu.R.string.dfu_status_error).setMessage(message)
                 .setPositiveButton(android.R.string.ok, null)
                 .show();
     }
