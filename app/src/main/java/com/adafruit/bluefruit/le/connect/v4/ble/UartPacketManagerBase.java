@@ -9,9 +9,9 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttManager;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttSettings;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttManager;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttSettings;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

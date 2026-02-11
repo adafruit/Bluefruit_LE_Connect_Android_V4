@@ -33,17 +33,17 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.BuildConfig;
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.app.CommonHelpFragment;
-import com.adafruit.bluefruit.le.connect.app.ConnectedPeripheralFragment;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.ble.central.UartPacketManager;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
-import com.adafruit.bluefruit.le.connect.utils.FileUtils;
-import com.adafruit.bluefruit.le.connect.utils.MetricsUtils;
-import com.adafruit.bluefruit.le.connect.utils.TwoDimensionScrollView;
+import com.adafruit.bluefruit.le.connect.v4.BuildConfig;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.app.CommonHelpFragment;
+import com.adafruit.bluefruit.le.connect.v4.app.ConnectedPeripheralFragment;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.UartPacketManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.FileUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.MetricsUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.TwoDimensionScrollView;
 
 import org.json.JSONArray;
 import org.json.JSONException;

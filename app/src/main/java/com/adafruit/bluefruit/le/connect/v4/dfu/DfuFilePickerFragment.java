@@ -21,7 +21,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 public class DfuFilePickerFragment extends AppCompatDialogFragment {
     // Activity request codes (used for onActivityResult)

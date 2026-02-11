@@ -31,13 +31,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SimpleItemAnimator;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.ble.central.UartDataManager;
-import com.adafruit.bluefruit.le.connect.utils.AdapterUtils;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.UartDataManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.AdapterUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

@@ -11,7 +11,7 @@ import android.util.Base64;
 
 import androidx.annotation.NonNull;
 
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 import java.util.List;
 import java.util.UUID;

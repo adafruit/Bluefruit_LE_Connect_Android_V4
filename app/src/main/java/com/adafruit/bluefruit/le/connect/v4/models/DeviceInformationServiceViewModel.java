@@ -5,7 +5,7 @@ import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
-import com.adafruit.bluefruit.le.connect.ble.peripheral.DeviceInformationPeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.DeviceInformationPeripheralService;
 
 public class DeviceInformationServiceViewModel extends AndroidViewModel {
 

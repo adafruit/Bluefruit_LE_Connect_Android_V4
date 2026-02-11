@@ -8,9 +8,9 @@ import androidx.annotation.Nullable;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.adafruit.bluefruit.le.connect.ble.peripheral.GattServer;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.PeripheralService;
-import com.adafruit.bluefruit.le.connect.utils.SingleLiveEvent;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.GattServer;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.PeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.utils.SingleLiveEvent;
 
 import java.util.List;
 

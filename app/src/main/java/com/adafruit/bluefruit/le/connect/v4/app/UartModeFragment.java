@@ -28,14 +28,14 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresPermission;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.UartPacket;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.ble.central.BleScanner;
-import com.adafruit.bluefruit.le.connect.ble.central.UartPacketManager;
-import com.adafruit.bluefruit.le.connect.style.UartStyle;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacket;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.UartPacketManager;
+import com.adafruit.bluefruit.le.connect.v4.style.UartStyle;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 

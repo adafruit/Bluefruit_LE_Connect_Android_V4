@@ -17,8 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresPermission;
 
-import com.adafruit.bluefruit.le.connect.BuildConfig;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.BuildConfig;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.Arrays;

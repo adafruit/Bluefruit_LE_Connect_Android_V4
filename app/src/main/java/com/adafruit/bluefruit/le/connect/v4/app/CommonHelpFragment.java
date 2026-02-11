@@ -12,7 +12,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 public class CommonHelpFragment extends Fragment {
     private static final String ARG_TITLE = "title";

@@ -31,7 +31,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresPermission;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
 
 import java.util.ArrayList;
 import java.util.Arrays;

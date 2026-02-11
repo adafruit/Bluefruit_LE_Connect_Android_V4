@@ -20,8 +20,8 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.utils.FileUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.utils.FileUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;

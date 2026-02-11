@@ -22,11 +22,11 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.ble.central.UartDataManager;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.UartDataManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.Locale;

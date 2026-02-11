@@ -7,8 +7,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.ble.central.BleScanner;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner;
 
 // helper class with common behaviour for all peripheral modules
 public class ConnectedPeripheralFragment extends Fragment {

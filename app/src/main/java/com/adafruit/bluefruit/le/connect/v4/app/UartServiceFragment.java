@@ -13,11 +13,11 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.UartPacket;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.UartPeripheralModePacketManager;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.UartPeripheralService;
-import com.adafruit.bluefruit.le.connect.models.PeripheralModeManager;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacket;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.UartPeripheralModePacketManager;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.UartPeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.models.PeripheralModeManager;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 

@@ -24,10 +24,10 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttManager;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttSettings;
-import com.adafruit.bluefruit.le.connect.utils.KeyboardUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttManager;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttSettings;
+import com.adafruit.bluefruit.le.connect.v4.utils.KeyboardUtils;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;

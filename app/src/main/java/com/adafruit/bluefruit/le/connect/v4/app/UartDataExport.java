@@ -2,8 +2,8 @@ package com.adafruit.bluefruit.le.connect.v4.app;
 
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.UartPacket;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacket;
 
 import org.json.JSONArray;
 import org.json.JSONException;

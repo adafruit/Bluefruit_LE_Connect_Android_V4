@@ -32,14 +32,14 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.dfu.DfuFilePickerFragment;
-import com.adafruit.bluefruit.le.connect.dfu.DfuService;
-import com.adafruit.bluefruit.le.connect.dfu.DfuUpdater;
-import com.adafruit.bluefruit.le.connect.dfu.ReleasesParser;
-import com.adafruit.bluefruit.le.connect.models.DfuViewModel;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.dfu.DfuFilePickerFragment;
+import com.adafruit.bluefruit.le.connect.v4.dfu.DfuService;
+import com.adafruit.bluefruit.le.connect.v4.dfu.DfuUpdater;
+import com.adafruit.bluefruit.le.connect.v4.dfu.ReleasesParser;
+import com.adafruit.bluefruit.le.connect.v4.models.DfuViewModel;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;

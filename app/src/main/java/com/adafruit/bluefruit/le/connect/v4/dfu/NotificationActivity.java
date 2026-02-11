@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.adafruit.bluefruit.le.connect.app.MainActivity;
+import com.adafruit.bluefruit.le.connect.v4.app.MainActivity;
 
 public class NotificationActivity extends Activity {
     @Override

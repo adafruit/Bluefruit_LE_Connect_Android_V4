@@ -31,11 +31,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SimpleItemAnimator;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.ble.central.BleUUIDNames;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BleUUIDNames;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 import java.util.ArrayList;
 import java.util.HashMap;

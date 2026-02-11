@@ -21,16 +21,16 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.app.imagetransfer.ImageTransferFragment;
-import com.adafruit.bluefruit.le.connect.app.neopixel.NeopixelFragment;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralBattery;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralDfu;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.ble.central.BleScanner;
-import com.adafruit.bluefruit.le.connect.style.RssiUI;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.app.imagetransfer.ImageTransferFragment;
+import com.adafruit.bluefruit.le.connect.v4.app.neopixel.NeopixelFragment;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralBattery;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralDfu;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner;
+import com.adafruit.bluefruit.le.connect.v4.style.RssiUI;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

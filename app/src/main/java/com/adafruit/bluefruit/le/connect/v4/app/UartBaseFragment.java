@@ -41,14 +41,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SimpleItemAnimator;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.UartPacket;
-import com.adafruit.bluefruit.le.connect.ble.UartPacketManagerBase;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttManager;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttSettings;
-import com.adafruit.bluefruit.le.connect.utils.KeyboardUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacket;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacketManagerBase;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttManager;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttSettings;
+import com.adafruit.bluefruit.le.connect.v4.utils.KeyboardUtils;
 
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;

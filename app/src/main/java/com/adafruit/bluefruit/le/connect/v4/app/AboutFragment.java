@@ -13,8 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
-import com.adafruit.bluefruit.le.connect.BuildConfig;
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.BuildConfig;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 public class AboutFragment extends Fragment {
 

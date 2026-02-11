@@ -1,6 +1,6 @@
 package com.adafruit.bluefruit.le.connect.v4.utils;
 
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;

@@ -8,8 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.utils.ScreenUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.utils.ScreenUtils;
 
 import no.nordicsemi.android.dfu.DfuProgressListener;
 import no.nordicsemi.android.dfu.DfuProgressListenerAdapter;

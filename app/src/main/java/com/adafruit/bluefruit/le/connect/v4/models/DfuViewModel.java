@@ -9,10 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModel;
 
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.dfu.DfuUpdater;
-import com.adafruit.bluefruit.le.connect.dfu.ReleasesParser;
-import com.adafruit.bluefruit.le.connect.utils.SingleLiveEvent;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.dfu.DfuUpdater;
+import com.adafruit.bluefruit.le.connect.v4.dfu.ReleasesParser;
+import com.adafruit.bluefruit.le.connect.v4.utils.SingleLiveEvent;
 
 import java.util.Map;
 

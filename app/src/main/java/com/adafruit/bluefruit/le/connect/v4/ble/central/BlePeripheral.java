@@ -24,8 +24,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresPermission;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.adafruit.bluefruit.le.connect.BuildConfig;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.BuildConfig;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

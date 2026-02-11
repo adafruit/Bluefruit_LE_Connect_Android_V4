@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 import com.naver.android.helloyako.imagecrop.view.ImageCropView;
 
 public class ImageCropFragment extends Fragment {

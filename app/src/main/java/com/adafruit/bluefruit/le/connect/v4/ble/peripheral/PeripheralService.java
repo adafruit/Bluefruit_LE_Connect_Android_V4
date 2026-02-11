@@ -11,7 +11,7 @@ import android.content.SharedPreferences;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 import java.util.HashMap;
 import java.util.HashSet;

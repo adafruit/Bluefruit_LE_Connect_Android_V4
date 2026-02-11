@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialog;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 public class ScannerStatusFragmentDialog extends AppCompatDialogFragment {
     // Params

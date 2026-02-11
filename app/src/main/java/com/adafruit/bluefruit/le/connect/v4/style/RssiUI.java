@@ -1,6 +1,6 @@
 package com.adafruit.bluefruit.le.connect.v4.style;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 public class RssiUI {
     public static int getDrawableIdForRssi(int rssi) {

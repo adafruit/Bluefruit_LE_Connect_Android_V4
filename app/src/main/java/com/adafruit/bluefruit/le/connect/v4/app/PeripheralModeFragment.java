@@ -28,11 +28,11 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.PeripheralService;
-import com.adafruit.bluefruit.le.connect.models.PeripheralModeViewModel;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.PeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.models.PeripheralModeViewModel;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
 
 public class PeripheralModeFragment extends Fragment {
     // Constants

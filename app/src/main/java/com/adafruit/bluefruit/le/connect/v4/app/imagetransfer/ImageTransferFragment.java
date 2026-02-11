@@ -51,15 +51,15 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.app.CommonHelpFragment;
-import com.adafruit.bluefruit.le.connect.app.ConnectedPeripheralFragment;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheralUart;
-import com.adafruit.bluefruit.le.connect.ble.central.UartPacketManager;
-import com.adafruit.bluefruit.le.connect.dfu.ProgressFragmentDialog;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
-import com.adafruit.bluefruit.le.connect.utils.ImageMagickUtils;
-import com.adafruit.bluefruit.le.connect.utils.ImageUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.app.CommonHelpFragment;
+import com.adafruit.bluefruit.le.connect.v4.app.ConnectedPeripheralFragment;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheralUart;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.UartPacketManager;
+import com.adafruit.bluefruit.le.connect.v4.dfu.ProgressFragmentDialog;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.ImageMagickUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.ImageUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -16,7 +16,7 @@ import androidx.appcompat.widget.SwitchCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 public class NeopixelComponentSelectorFragment extends AppCompatDialogFragment {
     // Log

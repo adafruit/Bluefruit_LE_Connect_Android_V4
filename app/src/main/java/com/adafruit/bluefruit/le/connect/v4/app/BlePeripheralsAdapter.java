@@ -25,15 +25,15 @@ import androidx.annotation.RequiresPermission;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.ble.central.BleScanner;
-import com.adafruit.bluefruit.le.connect.style.RssiUI;
-import com.adafruit.bluefruit.le.connect.utils.AdapterUtils;
-import com.adafruit.bluefruit.le.connect.utils.KeyboardUtils;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
-import com.adafruit.bluefruit.le.connect.utils.UriBeaconUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner;
+import com.adafruit.bluefruit.le.connect.v4.style.RssiUI;
+import com.adafruit.bluefruit.le.connect.v4.utils.AdapterUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.KeyboardUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.UriBeaconUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.Arrays;

@@ -5,7 +5,7 @@ import android.app.Activity;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 
-import com.adafruit.bluefruit.le.connect.BuildConfig;
+import com.adafruit.bluefruit.le.connect.v4.BuildConfig;
 
 import no.nordicsemi.android.dfu.DfuBaseService;
 

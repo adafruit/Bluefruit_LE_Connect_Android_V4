@@ -6,10 +6,10 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.ble.peripheral.DeviceInformationPeripheralService;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.GattServer;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.PeripheralService;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.UartPeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.DeviceInformationPeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.GattServer;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.PeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.UartPeripheralService;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

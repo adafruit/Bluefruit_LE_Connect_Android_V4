@@ -6,10 +6,10 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.ble.UartPacket;
-import com.adafruit.bluefruit.le.connect.ble.UartPacketManagerBase;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttManager;
-import com.adafruit.bluefruit.le.connect.mqtt.MqttSettings;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacket;
+import com.adafruit.bluefruit.le.connect.v4.ble.UartPacketManagerBase;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttManager;
+import com.adafruit.bluefruit.le.connect.v4.mqtt.MqttSettings;
 
 public class UartPeripheralModePacketManager extends UartPacketManagerBase {
     // Log

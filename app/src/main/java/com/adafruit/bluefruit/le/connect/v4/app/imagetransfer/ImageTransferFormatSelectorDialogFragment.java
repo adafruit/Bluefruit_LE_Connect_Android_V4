@@ -17,7 +17,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class ImageTransferFormatSelectorDialogFragment extends DialogFragment implements ImageTransferFormatSelectorPageFragment.FormatSelectorListener {// AppCompatDialogFragment {

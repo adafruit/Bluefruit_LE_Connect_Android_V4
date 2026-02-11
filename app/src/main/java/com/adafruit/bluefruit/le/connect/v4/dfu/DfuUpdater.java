@@ -12,11 +12,11 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.BuildConfig;
-import com.adafruit.bluefruit.le.connect.ble.BleUtils;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.utils.NetworkUtils;
-import com.adafruit.bluefruit.le.connect.utils.ThreadUtils;
+import com.adafruit.bluefruit.le.connect.v4.BuildConfig;
+import com.adafruit.bluefruit.le.connect.v4.ble.BleUtils;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.utils.NetworkUtils;
+import com.adafruit.bluefruit.le.connect.v4.utils.ThreadUtils;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;

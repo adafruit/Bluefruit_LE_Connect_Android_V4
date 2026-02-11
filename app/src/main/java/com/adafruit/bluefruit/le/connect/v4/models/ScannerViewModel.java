@@ -28,11 +28,11 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.central.BlePeripheral;
-import com.adafruit.bluefruit.le.connect.ble.central.BleScanner;
-import com.adafruit.bluefruit.le.connect.utils.LocalizationManager;
-import com.adafruit.bluefruit.le.connect.utils.SingleLiveEvent;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BlePeripheral;
+import com.adafruit.bluefruit.le.connect.v4.ble.central.BleScanner;
+import com.adafruit.bluefruit.le.connect.v4.utils.LocalizationManager;
+import com.adafruit.bluefruit.le.connect.v4.utils.SingleLiveEvent;
 
 import java.util.ArrayList;
 import java.util.Arrays;

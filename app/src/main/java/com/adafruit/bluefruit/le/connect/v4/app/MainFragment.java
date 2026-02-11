@@ -21,9 +21,9 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.models.PeripheralModeViewModel;
-import com.adafruit.bluefruit.le.connect.utils.DialogUtils;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.models.PeripheralModeViewModel;
+import com.adafruit.bluefruit.le.connect.v4.utils.DialogUtils;
 
 import java.lang.ref.WeakReference;
 

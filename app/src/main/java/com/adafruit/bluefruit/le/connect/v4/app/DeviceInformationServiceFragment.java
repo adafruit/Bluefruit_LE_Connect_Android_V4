@@ -24,9 +24,9 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.adafruit.bluefruit.le.connect.R;
-import com.adafruit.bluefruit.le.connect.ble.peripheral.DeviceInformationPeripheralService;
-import com.adafruit.bluefruit.le.connect.models.DeviceInformationServiceViewModel;
+import com.adafruit.bluefruit.le.connect.v4.R;
+import com.adafruit.bluefruit.le.connect.v4.ble.peripheral.DeviceInformationPeripheralService;
+import com.adafruit.bluefruit.le.connect.v4.models.DeviceInformationServiceViewModel;
 
 public class DeviceInformationServiceFragment extends Fragment {
     // Log

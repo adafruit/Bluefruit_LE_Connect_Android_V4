@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 import com.google.android.material.snackbar.Snackbar;
 
 public class StyledSnackBar {

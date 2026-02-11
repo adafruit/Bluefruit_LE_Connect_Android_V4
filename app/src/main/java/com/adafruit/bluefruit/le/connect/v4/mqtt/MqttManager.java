@@ -7,7 +7,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.adafruit.bluefruit.le.connect.R;
+import com.adafruit.bluefruit.le.connect.v4.R;
 
 import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.android.service.MqttTraceHandler;
