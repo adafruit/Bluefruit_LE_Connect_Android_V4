@@ -1,4 +1,4 @@
-# Bluefruit_LE_Connect_Android_V2
+# Bluefruit_LE_Connect_Android_V4
 
 Android app for use with Bluefruit Bluetooth LE modules and dev boards from Adafruit.
 
@@ -7,7 +7,7 @@ Android app for use with Bluefruit Bluetooth LE modules and dev boards from Adaf
 
 - Main branch is for version 4.x of the app (Android) 
 
-- The source code for previous unsupported versions is available at [Bluefruit_LE_Connect_Android](https://github.com/adafruit/Bluefruit_LE_Connect_Android).
+- The source code for previous unsupported versions is available at [Bluefruit_LE_Connect_Android](https://github.com/adafruit/Bluefruit_LE_Connect_Android_V2).
 
 
 ## Supported Hardware
