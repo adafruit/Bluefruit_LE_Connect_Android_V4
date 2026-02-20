@@ -153,7 +153,7 @@
                 android:text=""
                 android:textColor="@color/infotext" />
 
-            <com.adafruit.bluefruit.le.connect.app.ThermalGradientView
+            <com.adafruit.bluefruit.le.connect.v4.app.ThermalGradientView
                 android:id="@+id/thermalScaleView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

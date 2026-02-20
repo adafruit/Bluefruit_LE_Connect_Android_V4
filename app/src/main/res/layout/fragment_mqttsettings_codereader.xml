@@ -34,17 +34,17 @@
             android:text="@string/uart_mqtt_qrconfig_instructions"
             android:textColor="@color/infotext" />
 
-        <com.adafruit.bluefruit.le.connect.app.barcode.CameraSourcePreview
+        <com.adafruit.bluefruit.le.connect.v4.app.barcode.CameraSourcePreview
             android:id="@+id/preview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.adafruit.bluefruit.le.connect.app.barcode.GraphicOverlay
+            <com.adafruit.bluefruit.le.connect.v4.app.barcode.GraphicOverlay
                 android:id="@+id/graphicOverlay"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-        </com.adafruit.bluefruit.le.connect.app.barcode.CameraSourcePreview>
+        </com.adafruit.bluefruit.le.connect.v4.app.barcode.CameraSourcePreview>
 
     </LinearLayout>
 </RelativeLayout>

@@ -53,7 +53,7 @@
                 android:text="@string/colorpicker_wcomponent"
                 android:textColor="@color/infotext" />
 
-            <com.adafruit.bluefruit.le.connect.app.neopixel.NeopixelComponentWBar
+            <com.adafruit.bluefruit.le.connect.v4.app.neopixel.NeopixelComponentWBar
                 android:id="@+id/wComponentBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

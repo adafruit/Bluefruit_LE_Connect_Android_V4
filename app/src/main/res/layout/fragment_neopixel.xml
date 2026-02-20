@@ -73,7 +73,7 @@
                 android:background="@drawable/border_white"
                 android:padding="2dp">
 
-                <com.adafruit.bluefruit.le.connect.utils.TwoDimensionScrollView
+                <com.adafruit.bluefruit.le.connect.v4.utils.TwoDimensionScrollView
                     android:id="@+id/customPanningView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -90,7 +90,7 @@
 
                         </RelativeLayout>
                     </FrameLayout>
-                </com.adafruit.bluefruit.le.connect.utils.TwoDimensionScrollView>
+                </com.adafruit.bluefruit.le.connect.v4.utils.TwoDimensionScrollView>
 
                 <ImageButton
                     android:id="@+id/rotateButton"
